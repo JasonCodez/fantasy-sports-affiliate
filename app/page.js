@@ -202,7 +202,7 @@ export default function Home() {
                       className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold py-2 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 mb-3 flex items-center justify-center gap-2"
                     >
                       <span>💕</span>
-                      <span>Share the Love!</span>
+                      <span>Share the love with your friends!</span>
                     </button>
                     {/* Learn More Button */}
                     <button className="w-full bg-white text-gray-900 font-bold py-2 rounded-lg hover:bg-gray-100 transition-colors">
