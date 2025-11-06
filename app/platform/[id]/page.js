@@ -111,14 +111,6 @@ export default function PlatformDetail({ params }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <a
-                href={site.affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`bg-gradient-to-r ${site.color} text-white font-bold py-3 px-8 rounded-lg hover:shadow-lg transition-all text-center`}
-              >
-                Claim {site.name} Bonus
-              </a>
-              <a
                 href={site.website}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,6 +118,36 @@ export default function PlatformDetail({ params }) {
               >
                 Visit Website
               </a>
+            </div>
+            
+            {/* Bottom Buttons */}
+            <div className="flex flex-col gap-3 mt-8">
+              {/* Claim Bonus Button */}
+              <a href={site.affiliateLink} target="_blank" rel="noopener noreferrer">
+                <button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-lg">
+                  🎁 Claim {site.name} Bonus
+                </button>
+              </a>
+
+              {/* Share Button */}
+              <button 
+                onClick={(e) => {
+                  e.preventDefault()
+                  if (navigator.share) {
+                    navigator.share({
+                      title: `Check out ${site.name}!`,
+                      text: `${site.name} - ${site.shortDescription}. Get bonus: ${site.bonus}`,
+                      url: window.location.href
+                    }).catch(err => console.log('Error sharing:', err))
+                  } else {
+                    alert('Share feature not available. Copy the link to share manually!')
+                  }
+                }}
+                className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-2 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <span>💕</span>
+                <span>Share the love with your friends!</span>
+              </button>
             </div>
           </div>
         </div>
@@ -255,33 +277,6 @@ export default function PlatformDetail({ params }) {
                 <li>• Set deposit limits</li>
               </ul>
             </div>
-
-            {/* Claim Bonus CTA */}
-            <a href={site.affiliateLink} target="_blank" rel="noopener noreferrer">
-              <button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-lg">
-                🎁 Claim {site.name} Bonus
-              </button>
-            </a>
-
-            {/* Share Button */}
-            <button 
-              onClick={(e) => {
-                e.preventDefault()
-                if (navigator.share) {
-                  navigator.share({
-                    title: `Check out ${site.name}!`,
-                    text: `${site.name} - ${site.shortDescription}. Get bonus: ${site.bonus}`,
-                    url: window.location.href
-                  }).catch(err => console.log('Error sharing:', err))
-                } else {
-                  alert('Share feature not available. Copy the link to share manually!')
-                }
-              }}
-              className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-2 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
-            >
-              <span>💕</span>
-              <span>Share the love with your friends!</span>
-            </button>
           </div>
         </div>
 
