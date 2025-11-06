@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'Best Fantasy Sports Platforms 2025 | Reviews & Bonuses',
@@ -49,7 +50,10 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
