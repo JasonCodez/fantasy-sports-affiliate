@@ -1,10 +1,25 @@
-# Fantasy Sports Affiliate Website
+# Fantasy Sports Affiliate Website - Propstars
 
 A modern, fully functional fantasy sports affiliate website showcasing the top fantasy sports platforms with detailed information about each site and sign-up bonuses.
 
-## 🚀 READY TO LAUNCH!
+## 🎯 DEPLOY NOW & GO LIVE!
 
-**Your site is production-ready!** See:
+**Your site is 100% production-ready!** 
+
+### 🚀 Deploy in 5 Minutes:
+1. Go to **https://vercel.com/new**
+2. Click **"Import from GitHub"**
+3. Select `fantasy-sports-affiliate`
+4. Click **"Deploy"**
+5. **LIVE!** 🎉
+
+**See:** [DEPLOY_NOW.md](./DEPLOY_NOW.md) for step-by-step
+
+### 📈 Get on Google Front Page:
+- [GOOGLE_FRONT_PAGE_CHECKLIST.md](./GOOGLE_FRONT_PAGE_CHECKLIST.md) - 15-minute setup
+- [GOOGLE_RANKING_GUIDE.md](./GOOGLE_RANKING_GUIDE.md) - Complete ranking guide
+
+### 📚 Launch Guides:
 - **[QUICK START LAUNCH](./QUICK_START_LAUNCH.md)** - Deploy in 10 minutes ⚡
 - **[LAUNCH GUIDE](./LAUNCH_GUIDE.md)** - Complete deployment instructions
 - **[LAUNCH COMMAND CENTER](./LAUNCH_COMMAND_CENTER.md)** - Master launch guide
