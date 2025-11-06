@@ -21,6 +21,9 @@ export const metadata = {
   alternates: {
     canonical: 'https://fantasy-sports-affiliate.com',
   },
+  verification: {
+    google: '11vrx53nw6b9SFq5fKct31N8gMiG-PrvzlHy54QT1bM',
+  },
 }
 
 export const viewport = {
