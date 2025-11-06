@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: 
 
-Sitemap: https://propstars.vercel.app/sitemap
+Sitemap: https://propstars.vercel.app/sitemap.xml
