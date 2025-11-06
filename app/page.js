@@ -69,11 +69,20 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Header */}
       <header className="bg-black/40 backdrop-blur-sm border-b border-white/10 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          {/* Logo Section */}
+          <div className="flex items-center justify-center mb-4">
+            <div className="flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-2 rounded-lg">
+              <span className="text-2xl">⭐</span>
+              <h1 className="text-3xl font-bold text-white">Propstars</h1>
+            </div>
+          </div>
+          
+          {/* Main Title and Description */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
               Fantasy Sports Hub: Best Platforms & Bonuses 2025
-            </h1>
+            </h2>
             <p className="text-xl text-gray-300">
               Compare top fantasy sports platforms, read honest reviews, and claim exclusive sign-up bonuses
             </p>
