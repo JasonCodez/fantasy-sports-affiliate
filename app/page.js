@@ -94,7 +94,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Introduction Section */}
         <section className="mb-16 bg-gradient-to-r from-purple-900/40 to-blue-900/40 rounded-lg p-8 border border-white/10">
-          <h2 className="text-3xl font-bold text-white mb-4">Welcome to Fantasy Sports Hub: Your Guide to the Best DFS Platforms</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Welcome to Propstars: Your Guide to the Best DFS Platforms</h2>
           <p className="text-gray-300 text-lg mb-4">
             Find the perfect fantasy sports platform for your style of play. Compare the top daily fantasy sports (DFS) sites including FanDuel, DraftKings, PrizePicks, Underdog, and more. Our comprehensive reviews include honest user testimonials, real star ratings, and the latest sign-up bonuses available in 2025.
           </p>
